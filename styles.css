@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.background {
+    background-image: url('watch.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stopwatch-container {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+}
+
+.headline-box {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.headline-box h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.stopwatch {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 48px;
+    font-weight: bold;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+#start {
+    background: #4CAF50;
+    color: white;
+}
+
+#start:hover {
+    background: #45a049;
+}
+
+#pause {
+    background: #f44336;
+    color: white;
+}
+
+#pause:hover {
+    background: #e53935;
+}
+
+#reset {
+    background: #008CBA;
+    color: white;
+}
+
+#reset:hover {
+    background: #007bb5;
+}
+
+#lap {
+    background: #ff9800;
+    color: white;
+}
+
+#lap:hover {
+    background: #fb8c00;
+}
+
+.laps {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.laps li {
+    background: #f0f0f0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
